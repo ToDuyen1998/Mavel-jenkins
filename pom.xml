@@ -71,7 +71,7 @@
 					<version>2.22.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>${xmlFiles}</suiteXmlFile>
 						</suiteXmlFiles>
 						<systemPropertyVariables>
 							<executionBrowser>${browser}</executionBrowser>
