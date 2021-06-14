@@ -73,6 +73,10 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<systemPropertyVariables>
+							<executionBrowser>${browser}</executionBrowser>
+							<appURL>${url}</appURL>
+						</systemPropertyVariables>
 					</configuration>
 				</plugin>
 				<plugin>
