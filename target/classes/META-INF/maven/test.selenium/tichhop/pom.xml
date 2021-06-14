@@ -71,13 +71,18 @@
 					<version>2.22.1</version>
 					<configuration>
 						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+					<!-- <configuration>
+						<suiteXmlFiles>
 							<suiteXmlFile>${xmlFiles}</suiteXmlFile>
 						</suiteXmlFiles>
 						<systemPropertyVariables>
 							<executionBrowser>${browser}</executionBrowser>
 							<appURL>${url}</appURL>
 						</systemPropertyVariables>
-					</configuration>
+					</configuration>-->
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
