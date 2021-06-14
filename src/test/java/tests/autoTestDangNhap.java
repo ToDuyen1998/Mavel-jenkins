@@ -74,7 +74,7 @@ public class autoTestDangNhap extends BaseTest{
             Login lg = new Login(userName,passWord,message);
 
             DangNhap(lg,i);
-            System.out.println("Test case "+(i+1)+" đã chạy xong");
+            System.out.println("Test case "+(i+1)+" đã chạy xong nhe");
             System.out.println("------------------"); 
 		}
 	}
