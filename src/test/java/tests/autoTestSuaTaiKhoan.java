@@ -12,5 +12,5 @@ public class autoTestSuaTaiKhoan {
 	SignUpPage signUpPg;
 	LoginPage loginPg;
 	DeleteAccountPage deleteAccountPg;//
-
+//
 }
