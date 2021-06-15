@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Objects.Acoount_SignUp;
+import Objects.Account_SignUp;
 import pages.DeleteAccountPage;
 import pages.LoginPage;
 import pages.SignUpPage;
@@ -58,7 +58,7 @@ public class autoTestDangKi extends BaseTest {
 			else
 				message = item[4].trim();
 
-			Acoount_SignUp taiKhoan = new Acoount_SignUp(userName, passWord, email, SDT, message);
+			Account_SignUp taiKhoan = new Account_SignUp(userName, passWord, email, SDT, message);
 			System.out.println(taiKhoan.getUserName());
 			System.out.println(taiKhoan.getPassWord());
 			System.out.println(taiKhoan.getEmail());
@@ -70,7 +70,7 @@ public class autoTestDangKi extends BaseTest {
 		}
 	}
 
-	private void DangKi(Acoount_SignUp taiKhoan, int i) {
+	private void DangKi(Account_SignUp taiKhoan, int i) {
 		signUpPg.sign_up(taiKhoan);
 
 		if (taiKhoan.getMesage().equals(signUpPg.alertMessage)) {
@@ -98,6 +98,7 @@ public class autoTestDangKi extends BaseTest {
 			loginPg.logout();
 			
 			loginPg.moveToLogInAndSignIn();
+			
 		}
 	}
 }

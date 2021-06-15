@@ -1,13 +1,13 @@
 package Objects;
 
-public class Acoount_SignUp {
+public class Account_SignUp {
 	private String userName;
 	private String passWord;
 	private String email;
 	private String SDT;
 	private String mesage;
 
-	public Acoount_SignUp(String userName, String passWord, String email, String sDT, String mesage) {
+	public Account_SignUp(String userName, String passWord, String email, String sDT, String mesage) {
 		this.userName = userName;
 		this.passWord = passWord;
 		this.email = email;
@@ -15,7 +15,7 @@ public class Acoount_SignUp {
 		this.mesage = mesage;
 	}
 
-	public Acoount_SignUp() {
+	public Account_SignUp() {
 		// TODO Auto-generated constructor stub
 	}
 

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.autoTestMuaHang">
+      <class name="tests.autoTestXoaHoaDon">
         <methods>
-          <include name="testMuaHang"/>
+          <include name="testXoaHoaDon"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- tests.autoTestMuaHang -->
+      </class> <!-- tests.autoTestXoaHoaDon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

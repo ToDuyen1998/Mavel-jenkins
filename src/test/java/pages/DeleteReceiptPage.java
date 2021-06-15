@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DeleteReceiptPage {
 	WebDriver driver;
@@ -21,19 +23,25 @@ public class DeleteReceiptPage {
 	}
 
 	public void XoaHoaDon(int row) {
-		String before_XPath = "//table/tbody/tr[";
-		String after_XPath = "]/td[7]/a";
-		String FinalXPath = before_XPath + row + after_XPath;
+//		tr:nth-child(3) > td:nth-child(8) > a.btn.btn-danger
+//		tr:nth-child(4) > td:nth-child(8) > a
+		String before_CSS = "tr:nth-child(";
+		String after_CSS = ") > td:nth-child(8) > a.btn.btn-danger";
+		
+		String FinalXPath = before_CSS + row + after_CSS;
 
-		driver.findElement(By.xpath(FinalXPath)).click();
+		count_rows = rows.size();
+		System.out.println("Row trước khi xóa : " + count_rows);
+		
+		driver.findElement(By.cssSelector(FinalXPath)).click();
 		driver.switchTo().alert().accept();
 	}
 
 	public void checkXoa() {
-		List row_final = driver.findElements(By.xpath("/html/body/div/div/div[2]/div/div/table/tbody/tr/td[1]"));
-		System.out.println("Row final sau khi xóa : " + row_final.size());
+		int row_final = rows.size();
+		System.out.println("Row final sau khi xóa : " + row_final);
 		
-		if ((count_rows - 1) == row_final.size()) {
+		if ((count_rows - 1) == row_final) {
 			System.out.println("Xóa Thành công!");
 		}
 	}

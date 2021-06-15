@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Objects.Acoount_SignUp;
+import Objects.Account_SignUp;
 
 public class SignUpPage {
 	WebDriver driver;
@@ -33,7 +33,7 @@ public class SignUpPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void sign_up(Acoount_SignUp taiKhoan) {
+	public void sign_up(Account_SignUp taiKhoan) {
 		tenDangKi.sendKeys(taiKhoan.getUserName());
 		matKhau.sendKeys(taiKhoan.getPassWord());
 		email.sendKeys(taiKhoan.getEmail());

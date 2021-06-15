@@ -22,8 +22,6 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/form/div[3]/button")
     WebElement BtnDangNhap;
 	
-
-	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
@@ -46,9 +44,15 @@ public class LoginPage extends BasePage{
 	
 	public void logout() {
 		moveToTaiKhoan();
+//		try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
     	moveToDangXuat();
-    	
+
     	System.out.println("Đã đăng xuất!");
 	}
 	

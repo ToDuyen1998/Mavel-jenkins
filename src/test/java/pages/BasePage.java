@@ -25,7 +25,7 @@ public class BasePage {
 	@FindBy(css = "a[href$='task=qlhd']")
 	WebElement BtnHoaDon;
 	
-	@FindBy(id =  "dangxuat")
+	@FindBy(id = "dangxuat")
     WebElement BtndangXuat;
 
 	@FindBy(linkText =  "Đặt hàng")

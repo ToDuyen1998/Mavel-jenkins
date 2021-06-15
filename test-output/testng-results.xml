@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15285" started-at="2021-06-14T19:13:08 ICT" finished-at="2021-06-14T19:13:24 ICT">
+  <suite name="Default suite" duration-ms="14150" started-at="2021-06-15T18:17:21 ICT" finished-at="2021-06-15T18:17:35 ICT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15285" started-at="2021-06-14T19:13:08 ICT" finished-at="2021-06-14T19:13:24 ICT">
-      <class name="tests.autoTestDangNhap">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.autoTestDangNhap@7b69c6ba]" name="setUp" is-config="true" duration-ms="10089" started-at="2021-06-14T19:13:08 ICT" finished-at="2021-06-14T19:13:19 ICT">
+    <test name="Default test" duration-ms="14150" started-at="2021-06-15T18:17:21 ICT" finished-at="2021-06-15T18:17:35 ICT">
+      <class name="tests.autoTestMuaHang">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.autoTestMuaHang@7b69c6ba]" name="setUp" is-config="true" duration-ms="5522" started-at="2021-06-15T18:17:21 ICT" finished-at="2021-06-15T18:17:27 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDangNhap()[pri:0, instance:tests.autoTestDangNhap@7b69c6ba]" name="testDangNhap" duration-ms="4470" started-at="2021-06-14T19:13:19 ICT" finished-at="2021-06-14T19:13:23 ICT">
+        <test-method status="PASS" signature="testMuaHang()[pri:0, instance:tests.autoTestMuaHang@7b69c6ba]" name="testMuaHang" duration-ms="7789" started-at="2021-06-15T18:17:27 ICT" finished-at="2021-06-15T18:17:35 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDangNhap -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.autoTestDangNhap@7b69c6ba]" name="tearDown" is-config="true" duration-ms="683" started-at="2021-06-14T19:13:23 ICT" finished-at="2021-06-14T19:13:24 ICT">
+        </test-method> <!-- testMuaHang -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.autoTestMuaHang@7b69c6ba]" name="tearDown" is-config="true" duration-ms="791" started-at="2021-06-15T18:17:35 ICT" finished-at="2021-06-15T18:17:35 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.autoTestDangNhap -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- tests.autoTestMuaHang -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

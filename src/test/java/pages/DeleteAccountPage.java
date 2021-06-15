@@ -24,16 +24,17 @@ public class DeleteAccountPage {
 		String before_XPath = "//table/tbody/tr[";
 		String after_XPath = "]/td[7]/a[2]";
 		String FinalXPath = before_XPath + row + after_XPath;
-
+		count_rows = rows.size();
+		
 		driver.findElement(By.xpath(FinalXPath)).click();
 		driver.switchTo().alert().accept();
 	}
 
 	public void checkXoa() {
-		List row_final = driver.findElements(By.xpath("/html/body/div/div/div[2]/div/div/table/tbody/tr/td[1]"));
-		System.out.println("Row final sau khi xóa : " + row_final.size());
+		int row_final = rows.size();
+		System.out.println("Row final sau khi xóa : " + row_final);
 		
-		if ((count_rows - 1) == row_final.size()) {
+		if ((count_rows - 1) == row_final) {
 			System.out.println("Xóa Thành công!");
 		}
 	}

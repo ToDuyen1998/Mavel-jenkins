@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import Objects.Receipt;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.DeleteReceiptPage;
 import pages.LoginPage;
 import pages.ReceiptPage;
 import utilities.ReadExcel;
@@ -19,6 +20,7 @@ import utilities.ReadExcel;
 public class autoTestMuaHang extends BaseTest{
 	LoginPage loginPg;
 	ReceiptPage receiptPg;
+	DeleteReceiptPage deleteReceiptPg;
 	
 	String mang[];
 	ReadExcel testcase = new ReadExcel();
@@ -27,6 +29,7 @@ public class autoTestMuaHang extends BaseTest{
 	public void testMuaHang() {
 		loginPg = new LoginPage(driver);
 		receiptPg = new ReceiptPage(driver);
+		deleteReceiptPg = new DeleteReceiptPage(driver);
 		
 		loginPg.login("duyen", "123");
 		
@@ -89,13 +92,22 @@ public class autoTestMuaHang extends BaseTest{
 		}
 		
 		if(receiptPg.alertMessage.equals("Đặt hàng thành công!")) {
+			loginPg.logout();
+			
+			loginPg.moveToLogInAndSignIn();
+			loginPg.login("admin", "123456");
+			loginPg.moveToTaiKhoan();
+			loginPg.moveToQuanLy();
+			loginPg.moveToHoaDon();
+			
+			deleteReceiptPg.count_rows = deleteReceiptPg.rows.size();
+			deleteReceiptPg.XoaHoaDon(deleteReceiptPg.count_rows);
+			deleteReceiptPg.checkXoa();
+			
 			loginPg.moveToTrangChu();
 			
-			
-			
-			loginPg.moveToMuaHang();
-			
-		}	
+			loginPg.moveToMuaHang();		
+		}
 	}
 
 }

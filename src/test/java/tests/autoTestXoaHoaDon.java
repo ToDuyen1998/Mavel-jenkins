@@ -19,6 +19,13 @@ public class autoTestXoaHoaDon extends BaseTest {
 		loginPg.moveToTaiKhoan();
 		loginPg.moveToQuanLy();
 		loginPg.moveToHoaDon();
+
+//		try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 		deleteReceiptPg.XoaHoaDon(4);
 		deleteReceiptPg.checkXoa();

@@ -25,7 +25,7 @@ public class autoTestXoaTaiKhoan extends BaseTest{
 		loginPg.moveToQuanLy();
 		loginPg.moveToThanhVien();
 		
-		deleteAccountPg.XoaTaiKhoan(4);
+		deleteAccountPg.XoaTaiKhoan(3);
 		deleteAccountPg.checkXoa();
 	}   
 }
