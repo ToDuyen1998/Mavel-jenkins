@@ -11,6 +11,6 @@ public class autoTestSuaTaiKhoan {
 	ReadExcel testcase = new ReadExcel();
 	SignUpPage signUpPg;
 	LoginPage loginPg;
-	DeleteAccountPage deleteAccountPg;
+	DeleteAccountPage deleteAccountPg;//
 
 }
